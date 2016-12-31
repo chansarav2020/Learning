@@ -43,8 +43,4 @@ def nearestPrimeAscii(primeArray: Array[Int], key:Int)={
   }
 recur(0,primeArray.size-1)
 }
-
-
-
-
 }
