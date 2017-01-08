@@ -1,10 +1,19 @@
-object Facotiral {
+object GreatKian {
     def main(args: Array[String]) {
-        val number=readInt
-        val multiply=(a:Int,b:Int)=>a*b
-        println((1 to number).reduceLeft(multiply))
 
+        val noOfValues = readInt
+        val valuesArray=readLine().split(' ').map(BigInt(_))
+        var seq1,seq2,seq3,counter=BigInt(0)
+        for(a<-valuesArray){
+          counter+=1
+          if(counter%3==1) seq1+=a
+          if(counter%3==2) seq2+=a
+          if(counter%3==0) seq3+=a
+
+        }
+        println (seq1+" " +seq2+ " " +seq3)
 
     }
 }
+
 
